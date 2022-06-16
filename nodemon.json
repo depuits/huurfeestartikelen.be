@@ -1,0 +1,4 @@
+{
+    "ignore": ["build/*"],
+	"ext": "js scss njk json html hbs md"
+}

@@ -1,0 +1,16 @@
+{{> header }}
+{{#if date}}
+<h1 class="date">{{ date_string date }}</h1>
+{{/if}}
+
+{{#if image}}
+<div class="day__img">
+	<img src="../images/{{image}}" />
+	{{#if desc}}
+	<p class="caption">{{ desc }}</p>
+	{{/if}}
+</div>
+{{else}}
+<p>{{ desc }}</p>
+{{/if}}
+{{> footer }}

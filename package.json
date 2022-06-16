@@ -1,0 +1,42 @@
+{
+  "name": "photoTimeline",
+  "version": "1.0.0",
+  "description": "Simple photo blog/timeline website.",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js",
+    "watch": "nodemon build.js",
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.bok19.net/colmanjoeri/photoTimeline.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@metalsmith/collections": "^1.2.1",
+    "@metalsmith/drafts": "^1.1.1",
+    "@metalsmith/in-place": "^4.5.0",
+    "@metalsmith/layouts": "^2.5.1",
+    "@metalsmith/markdown": "^1.6.0",
+    "@metalsmith/permalinks": "^2.4.0",
+    "@metalsmith/sass": "^1.0.0",
+    "bulma": "^0.9.4",
+    "cheerio": "^1.0.0-rc.11",
+    "jstransformer-handlebars": "^1.2.0",
+    "metalsmith": "^2.5.0",
+    "metalsmith-assets-improved": "^1.0.1",
+    "metalsmith-debug": "^1.2.0",
+    "metalsmith-feed": "github:depuits/metalsmith-feed",
+    "metalsmith-handlebars-x": "^0.3.0",
+    "metalsmith-native-lazy-loading": "github:depuits/metalsmith-native-lazy-loading",
+    "metalsmith-rootpath": "^1.0.4",
+    "metalsmith-sharp": "github:depuits/metalsmith-sharp",
+    "metalsmith-sugar": "^1.1.0",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.16",
+    "path-value": "^0.9.4"
+  }
+}
