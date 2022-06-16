@@ -3,34 +3,34 @@ kind: pipeline
 type: docker
 name: default
 trigger:
-	branch:
-	- master
-	event:
-	- push
+  branch:
+  - master
+  event:
+  - push
 
 steps:
 - name: build
-	image: node
-	commands:
-	- npm install
-	- npm run build
+  image: node
+  commands:
+  - npm install
+  - npm run build
 
 - name: test
-	image: node
-	commands:
-	- npm run test
+  image: node
+  commands:
+  - npm run test
 
 - name: deploy
-	image: drillster/drone-rsync
-	settings:
-		hosts:
-			from_secret: web_host
-		user:
-			from_secret: web_user
-		key:
-			from_secret: web_key
-		recursive: true
-		delete: true
-		source: ./build/
-		target: /www/rentshop
+  image: drillster/drone-rsync
+  settings:
+    hosts:
+      from_secret: web_host
+    user:
+      from_secret: web_user
+    key:
+      from_secret: web_key
+    recursive: true
+    delete: true
+    source: ./build/
+    target: /www/rentshop
 ...
