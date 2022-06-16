@@ -9,8 +9,6 @@ describe('phototimeline root', () => {
 	it('build should have key files', () => {
 		const sitePaths = [
 			path.join(sitePath, 'index.html'),
-			path.join(sitePath, 'items.html'),
-			path.join(sitePath, 'noah.html'),
 		];
 
 		sitePaths.forEach(filePath => {
