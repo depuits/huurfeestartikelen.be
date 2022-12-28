@@ -2,17 +2,19 @@
 
 Simple site to display and contact to rent stuff.
 
-## Build
+## Setup
 
 1. Install dependencies
 
         npm i
 
-2. Build the site
+## Development
 
-        node build.js
+1. Run the site
 
-3. Output will be placed in `build` folder which can then be hosted on server.
+        npm run start
+
+2. Browse site at http://localhost:3000
 
 ### Debug
 
@@ -26,4 +28,14 @@ Windows
 
     set DEBUG=metalsmith*
 
+## Build
 
+1. Build the site
+
+        npm run build
+
+2. Run tests
+
+        npm run test
+
+3. Output will be placed in `build` folder which can then be hosted on server.
