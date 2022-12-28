@@ -10,13 +10,13 @@ trigger:
 
 steps:
 - name: build
-  image: node
+  image: node:18
   commands:
   - npm install
   - npm run build
 
 - name: test
-  image: node
+  image: node:18
   commands:
   - npm run test
 
