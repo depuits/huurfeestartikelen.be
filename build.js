@@ -62,7 +62,7 @@ function build() {
 			helpers: handlebarsHelpers,
 		})
 
-		// .use('@metalsmith/in-place')
+		.use('@metalsmith/in-place')
 
 		// root path is use in layouts
 		.use('metalsmith-rootpath')
@@ -74,7 +74,7 @@ function build() {
 		})
 		*/
 
-		// .use('@metalsmith/layouts')
+		.use('@metalsmith/layouts')
 		.use('metalsmith-native-lazy-loading', { selector: 'article' })
 
 		.use('metalsmith-debug')
