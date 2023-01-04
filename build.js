@@ -19,6 +19,11 @@ function build() {
 				description: 'Website to rent stuff.',
 				url: isProduction ? 'https://www.bok19.net/rent/' : 'https://localhost:3000',
 			},
+			contact: {
+				mail: 'info@bok19.net',
+				phone: '0497 16 15 85',
+				address: 'Bokstraat 19, 9870 Zulte-Machelen',
+			},
 		},
 	});
 
