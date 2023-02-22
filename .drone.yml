@@ -24,8 +24,8 @@ steps:
   image: drillster/drone-rsync
   settings:
     hosts:
-      - from_secret: web_host
-      - from_secret: web_host_extern
+      - web
+      - web-extern
     user:
       from_secret: web_user
     key:
