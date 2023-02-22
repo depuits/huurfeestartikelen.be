@@ -20,11 +20,25 @@ steps:
   commands:
   - npm run test
 
-- name: deploy
+- name: deploy local
   image: drillster/drone-rsync
   settings:
     hosts:
-      from_secret: web_host_all
+      from_secret: web_host
+    user:
+      from_secret: web_user
+    key:
+      from_secret: web_key
+    recursive: true
+    delete: true
+    source: ./build/
+    target: /www/rentshop
+
+- name: deploy remote
+  image: drillster/drone-rsync
+  settings:
+    hosts:
+      from_secret: web_host_extern
     user:
       from_secret: web_user
     key:
