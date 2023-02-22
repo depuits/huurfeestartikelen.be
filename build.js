@@ -15,7 +15,7 @@ function build() {
 		metadata: {
 			isProduction,
 			site: {
-				title: 'RentShop',
+				title: 'Colman verhuur',
 				description: 'Website to rent stuff.',
 				url: isProduction ? 'https://www.bok19.net/rent/' : 'https://localhost:3000',
 			},

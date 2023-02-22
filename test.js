@@ -21,6 +21,6 @@ describe('rentshop root', () => {
 		const indexContent = fs.readFileSync(path.join(sitePath, 'index.html')).toString();
 		const $ = cheerio.load(indexContent);
 
-		assert.strictEqual($('title')[0].children[0].data, 'Zay Shop eCommerce HTML CSS Template');
+		assert.strictEqual($('title')[0].children[0].data, 'RentShop');
 	});
 });
