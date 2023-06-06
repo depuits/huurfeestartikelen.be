@@ -15,13 +15,14 @@ function build() {
 		metadata: {
 			isProduction,
 			site: {
-				title: 'Colman verhuur',
-				description: 'Website to rent stuff.',
-				url: isProduction ? 'https://www.bok19.net/rent/' : 'https://localhost:3000',
+				title: 'Huur feestartikelen',
+				description:
+					'Verhuur van feestartikelen zoals tenten, stoelen en glazen voor een geslaagd feest of evenement.',
+				url: isProduction ? 'https://huurfeestartikelen.be' : 'https://localhost:3000',
 			},
 			contact: {
 				mail: 'info@bok19.net',
-				phone: '0497 16 15 85',
+				phone: '+324 97 16 15 85',
 				address: 'Bokstraat 19, 9870 Zulte-Machelen',
 			},
 		},
