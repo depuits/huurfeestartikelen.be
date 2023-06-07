@@ -10,5 +10,5 @@ jobs:
       uses: depuits/MetalsmithPagesAction@0.0.1
       with:
         username: 'huurfeestartikelen-be'
-        reponame: 'huurfeestartikelen.be.github.io '
+        reponame: 'huurfeestartikelen.be.github.io'
         token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
