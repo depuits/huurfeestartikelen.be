@@ -1,0 +1,14 @@
+name: Build
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build
+    steps:
+    - uses: actions/checkout@v2
+    - id: Build
+      uses: depuits/MetalsmithPagesAction@0.0.1
+      with:
+        username: 'depuits'
+        reponame: 'huurfeestartikelen.be'
+        token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
