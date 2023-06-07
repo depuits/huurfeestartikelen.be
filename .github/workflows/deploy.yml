@@ -9,6 +9,6 @@ jobs:
     - id: Build
       uses: depuits/MetalsmithPagesAction@0.0.1
       with:
-        username: 'depuits'
-        reponame: 'huurfeestartikelen.be'
+        username: 'huurfeestartikelen-be'
+        reponame: 'huurfeestartikelen.be.github.io '
         token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
