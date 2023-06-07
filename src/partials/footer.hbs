@@ -23,11 +23,14 @@
                 <div class="col-md-4 pt-5">
                     <h2 class="h2 text-light border-bottom pb-3 border-light">Artikelen</h2>
                     <ul class="list-unstyled text-light footer-link-list">
-                        <li><a class="text-decoration-none" href="#">Tenten</a></li>
-                        <li><a class="text-decoration-none" href="#">Meubels</a></li>
-                        <li><a class="text-decoration-none" href="#">Decoratie</a></li>
-                        <li><a class="text-decoration-none" href="#">Service</a></li>
-                        <li><a class="text-decoration-none" href="#">Diverse</a></li>
+                    	{{#each collections}}
+		                	{{#if_eq @key 'articles'}}
+		                	{{else}}
+		                    <li>
+		                    	<a class="text-decoration-none" href="{{rootPath}}{{@key}}.html">{{@key}}</a>
+		                    </li>
+		                    {{/if_eq}}
+                    	{{/each}}
                     </ul>
                 </div>
 
@@ -76,7 +79,7 @@
                 <div class="row pt-2">
                     <div class="col-12">
                         <p class="text-left text-light">
-                            Copyright &copy; 2023 Colman Joeri | Designed by <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>
+                            Copyright &copy; {{ get_current_year }} Colman Joeri | Designed by <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>
                         </p>
                     </div>
                 </div>
@@ -85,6 +88,9 @@
 
     </footer>
     <!-- End Footer -->
+
+	<!-- Fullscreen element (hidden by default) -->
+	<div id="fullscreen" style="display:none;"></div>
 
     <!-- Start Script -->
     <script src="{{rootPath}}assets/js/jquery-1.11.0.min.js"></script>

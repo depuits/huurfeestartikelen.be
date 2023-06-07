@@ -1,8 +1,10 @@
 ---
+draft: true
 collection:
-  - Tenten
-image: "baby_joeri_.jpg"
-titel: "Party tent 5m x 10m"
+  - Decoratie
+images:
+  - "images/stoelen/3b2f2bbf-9d41-4aec-9846-7887010d51b6.jpg"
+title: "Schaal"
 ---
 
 Verhuur partytenten voor receptie of feest.

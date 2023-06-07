@@ -165,6 +165,7 @@ body, ul, li, p, a, label, input, div {
 .product-wap .product-color-dot {
   width: 6px;
   height: 6px;
+  display: inline-block;
 }
 
 @media (min-width: 576px) {

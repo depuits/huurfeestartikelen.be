@@ -1,0 +1,83 @@
+
+{{> header }}
+
+<!-- Open Content -->
+<section class="bg-light">
+	<div class="container pb-5">
+		<div class="row">
+			<div class="col-lg-5 mt-5">
+				<div class="card mb-3">
+					<img class="card-img img-fluid" src="{{rootPath}}{{first images}}" alt="Card image cap" onclick="showFullscreen(this)" style="cursor: zoom-in;" id="product-detail">
+				</div>
+				<div class="row">
+					<!--Start Controls-->
+					<div class="col-1 align-self-center">
+						<a href="#multi-item-example" role="button" data-bs-slide="prev">
+							<i class="text-dark fas fa-chevron-left"></i>
+							<span class="sr-only">Previous</span>
+						</a>
+					</div>
+					<!--End Controls-->
+					<!--Start Carousel Wrapper-->
+					<div id="multi-item-example" class="col-10 carousel slide carousel-multi-item" data-bs-ride="carousel">
+						<!--Start Slides-->
+						<div class="carousel-inner product-links-wap" role="listbox">
+							{{#each images}}
+							{{#is_xth_item @key 3}}
+								{{!-- close prev if not first item--}}
+								{{#is_first ../images @key}}
+									<div class="carousel-item active">
+									<div class="row">
+								{{else}}
+									</div></div>
+									<div class="carousel-item">
+									<div class="row">
+								{{/is_first}}
+							{{/is_xth_item}}
+
+									<div class="col-4">
+										<a href="#">
+											<img class="card-img img-fluid" src="{{rootPath}}{{this}}" alt="{{title}}">
+										</a>
+									</div>
+
+							{{!-- close self if last item --}}
+							{{#is_last ../images @key}}
+								</div></div>
+							{{/is_last}}
+							{{/each}}
+						</div>
+						<!--End Slides-->
+					</div>
+					<!--End Carousel Wrapper-->
+					<!--Start Controls-->
+					<div class="col-1 align-self-center">
+						<a href="#multi-item-example" role="button" data-bs-slide="next">
+							<i class="text-dark fas fa-chevron-right"></i>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+					<!--End Controls-->
+				</div>
+			</div>
+			<!-- col end -->
+			<div class="col-lg-7 mt-5">
+				<div class="card">
+					<div class="card-body">
+						<h1 class="h2">{{title}}</h1>
+						{{#if price}}
+							<p class="h3 py-2">€{{format_price price}}</p>
+						{{/if}}
+
+						<h6>Omschrijving:</h6>
+
+						{{{contents}}}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Close Content -->
+
+{{> footer }}

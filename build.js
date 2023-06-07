@@ -1,9 +1,12 @@
 /* eslint-disable import/no-extraneous-dependencies */
 
+const path = require('path');
 const metalsmith = require('metalsmith');
 const metalsmithSugar = require('metalsmith-sugar');
 const collections = require('@metalsmith/collections');
 const handlebarsHelpers = require('./helpers/handlebarsBasics');
+
+const addCollectionPages = require('./addCollectionPages');
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -32,6 +35,10 @@ function build() {
 		.use('metalsmith-assets-improved', {
 			dest: 'assets',
 		})
+		.use('metalsmith-assets-improved', {
+			src: path.join(__dirname, 'icons'),
+			dest: 'icons',
+		})
 		.use('@metalsmith/sass', {
 			loadPaths: ['node_modules'],
 		})
@@ -44,7 +51,8 @@ function build() {
 					args: {
 						width: 800,
 						height: 800,
-						fit: 'inside',
+						fit: 'contain',
+						background: '#fff',
 					},
 				},
 				{
@@ -57,8 +65,8 @@ function build() {
 		.use('@metalsmith/markdown')
 		.use(
 			collections({
-				items: {
-					pattern: 'items/*',
+				articles: {
+					pattern: 'articles/*',
 				},
 			})
 		)
@@ -73,15 +81,15 @@ function build() {
 		// root path is use in layouts
 		.use('metalsmith-rootpath')
 
-		/*
 		.use('@metalsmith/layouts', {
-			default: 'item.hbs',
-			pattern: 'items/*.html',
+			default: 'article.hbs',
+			pattern: 'articles/*.html',
 		})
-		*/
+
+		.use(addCollectionPages())
 
 		.use('@metalsmith/layouts')
-		.use('metalsmith-native-lazy-loading', { selector: 'article' })
+		.use('metalsmith-native-lazy-loading', { selector: 'carousel' })
 
 		.use('metalsmith-debug')
 		.use('debug') // metalsmith-native-lazy-loading uses debug instead of metalsmith-debug

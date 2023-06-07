@@ -1,10 +1,10 @@
 {
   "*.css": [
     "prettier --write",
-    "stylelint"
+    "stylelint '**/*.scss' --allow-empty-input"
   ],
   "*.js": [
     "prettier --write",
-    "eslint"
+    "eslint '**/*.js'"
   ]
 }
