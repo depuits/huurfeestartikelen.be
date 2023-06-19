@@ -24,7 +24,7 @@ function build() {
 				url: isProduction ? 'https://huurfeestartikelen.be' : 'https://localhost:3000',
 			},
 			contact: {
-				mail: 'info@bok19.net',
+				mail: 'info@huurfeestartikelen.be',
 				phone: '+324 97 16 15 85',
 				address: 'Bokstraat 19, 9870 Zulte-Machelen',
 			},

@@ -8,7 +8,7 @@ const build = require('../build');
 (async function firstRun() {
 	await build();
 	chokidar
-		.watch(['src', 'assets'], {
+		.watch(['src', 'assets', 'layouts'], {
 			ignoreInitial: true,
 			awaitWriteFinish: { pollInterval: 1000 },
 		})

@@ -25,6 +25,7 @@
                     <ul class="list-unstyled text-light footer-link-list">
                     	{{#each collections}}
 		                	{{#if_eq @key 'articles'}}
+		                    	<a class="text-decoration-none" href="{{rootPath}}{{@key}}.html">Alle</a>
 		                	{{else}}
 		                    <li>
 		                    	<a class="text-decoration-none" href="{{rootPath}}{{@key}}.html">{{@key}}</a>
