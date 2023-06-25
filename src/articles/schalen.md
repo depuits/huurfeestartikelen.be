@@ -1,17 +1,11 @@
 ---
-draft: true
 collection:
   - Decoratie
 images:
-  - "images/stoelen/3b2f2bbf-9d41-4aec-9846-7887010d51b6.jpg"
-title: "Schaal"
+  - "images/schalen/UPSHOT-HuwelijkElienJoeri-Receptie-35.jpg"
+  - "images/schalen/UPSHOT-HuwelijkElienJoeri-Receptie-36.jpg"
+title: "Gouden schaal"
+price: 0.5
 ---
 
-Verhuur partytenten voor receptie of feest.
-Beschikbare tenten:
-- 5m x 10m (wit) €150 per stuk, 4 maal beschikbaar
-- 3m x 9m (wit), €100 voor 2 (laatste foto)
-
-De tenten zijn gemakkelijk op te zetten en af te breken. Levering kan geregeld worden indien gewenst.
-
-Wanden zonder ramen zijn beschikbaar in delen per 2m.
+Voeg een vleugje glamour toe aan jouw decor met onze prachtige gouden schaal voor decoratie. Deze schaal is perfect voor het presenteren en accentueren van verschillende decoratieve elementen. Met zijn glanzende gouden afwerking voegt deze schaal een vleugje luxe en elegantie toe aan elke ruimte. Of je nu een bruiloft, feest of speciale gelegenheid organiseert, onze gouden schaal is een opvallend pronkstuk. Reserveer vandaag nog deze schaal en geef jouw decoratie een schitterend middelpunt.
