@@ -11,7 +11,7 @@
                         </li>
                         <li>
                             <i class="fa fa-phone fa-fw"></i>
-                            <a class="text-decoration-none" href="tel:{{contact.phone}}">{{contact.phone}}</a>
+                            <a class="text-decoration-none" href="tel:{{remove_whitespace contact.phone}}">{{contact.phone}}</a>
                         </li>
                         <li>
                             <i class="fa fa-envelope fa-fw"></i>
@@ -24,11 +24,11 @@
                     <h2 class="h2 text-light border-bottom pb-3 border-light">Artikelen</h2>
                     <ul class="list-unstyled text-light footer-link-list">
                     	{{#each collections}}
-		                	{{#if_eq @key 'articles'}}
-		                    	<a class="text-decoration-none" href="{{rootPath}}{{@key}}.html">Alle</a>
+		                	{{#if_eq @key 'artikelen'}}
+		                    	<a class="text-decoration-none" href="{{../../rootPath}}{{@key}}.html">Alle</a>
 		                	{{else}}
 		                    <li>
-		                    	<a class="text-decoration-none" href="{{rootPath}}{{@key}}.html">{{@key}}</a>
+		                    	<a class="text-decoration-none" href="{{../../rootPath}}{{@key}}.html">{{@key}}</a>
 		                    </li>
 		                    {{/if_eq}}
                     	{{/each}}
@@ -80,7 +80,7 @@
                 <div class="row pt-2">
                     <div class="col-12">
                         <p class="text-left text-light">
-                            Copyright &copy; {{ get_current_year }} Colman Joeri | Designed by <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>
+                            Copyright &copy; {{get_current_year}} Colman Joeri | Designed by <a rel="sponsored" href="https://templatemo.com" target="_blank">TemplateMo</a>
                         </p>
                     </div>
                 </div>

@@ -44,3 +44,8 @@ Windows
 
 - Search
 - Cart
+
+## Credits
+
+- [zay-shop](https://templatemo.com/tm-559-zay-shop) from [templatemo](https://templatemo.com).
+- [Metalsmith](https://metalsmith.io/)

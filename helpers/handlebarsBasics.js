@@ -11,6 +11,8 @@ module.exports = {
 	format_price: num => myformat.format(num),
 	first: arr => (arr || [])[0],
 
+	remove_whitespace: str => (str || '').replace(/\s+/g, ''),
+
 	is_xth_item: (index, x, opts) => (index % x === 0 ? opts.fn(this) : opts.inverse(this)),
 
 	is_first: (col, i, opts) => (i === 0 ? opts.fn(this) : opts.inverse(this)),

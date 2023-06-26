@@ -4,7 +4,7 @@
 	<!-- Basic Page Needs
 	================================================== -->
 	<meta charset="utf-8">
-	<title>{{#if title}}{{title}}{{else}}{{site.title}}{{/if}}</title>
+	<title>{{#if title}}Verhuur van {{title}} | {{site.title}}{{else}}{{site.title}}{{/if}}</title>
 	<meta name="description" content="{{ site.description }}" />
 	<meta name="author" content="Colman Joeri">
 
@@ -44,7 +44,7 @@
 					<i class="fa fa-envelope mx-2"></i>
 					<a class="navbar-sm-brand text-light text-decoration-none" href="mailto:{{contact.mail}}">{{contact.mail}}</a>
 					<i class="fa fa-phone mx-2"></i>
-					<a class="navbar-sm-brand text-light text-decoration-none" href="tel:{{contact.phone}}">{{contact.phone}}</a>
+					<a class="navbar-sm-brand text-light text-decoration-none" href="tel:{{remove_whitespace contact.phone}}">{{contact.phone}}</a>
 				</div>
 				{{!-- <div>
 					<a class="text-light" href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i class="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
@@ -75,7 +75,7 @@
 							<a class="nav-link" href="{{rootPath}}index.html">Home</a>
 						</li> --}}
 						<li class="nav-item">
-							<a class="nav-link" href="{{rootPath}}articles.html">Artikelen</a>
+							<a class="nav-link" href="{{rootPath}}artikelen.html">Artikelen</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="{{rootPath}}about.html">Over ons</a>
@@ -86,14 +86,14 @@
 					</ul>
 				</div>
 				<div class="navbar align-self-center d-flex">
-					<div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
+					{{!-- <div class="d-lg-none flex-sm-fill mt-3 mb-4 col-7 col-sm-auto pr-3">
 						<div class="input-group">
 							<input type="text" class="form-control" id="inputMobileSearch" placeholder="Search ...">
 							<div class="input-group-text">
 								<i class="fa fa-fw fa-search"></i>
 							</div>
 						</div>
-					</div>
+					</div> --}}
 					{{!-- <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
 						<i class="fa fa-fw fa-search text-dark mr-2"></i>
 					</a>

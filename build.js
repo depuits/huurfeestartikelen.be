@@ -32,13 +32,6 @@ function build() {
 	});
 
 	sugar
-		.use('metalsmith-assets-improved', {
-			dest: 'assets',
-		})
-		.use('metalsmith-assets-improved', {
-			src: path.join(__dirname, 'icons'),
-			dest: 'icons',
-		})
 		.use('@metalsmith/sass', {
 			loadPaths: ['node_modules'],
 		})
@@ -65,8 +58,8 @@ function build() {
 		.use('@metalsmith/markdown')
 		.use(
 			collections({
-				articles: {
-					pattern: 'articles/*',
+				artikelen: {
+					pattern: 'artikelen/*',
 				},
 			})
 		)
@@ -83,13 +76,26 @@ function build() {
 
 		.use('@metalsmith/layouts', {
 			default: 'article.hbs',
-			pattern: 'articles/*.html',
+			pattern: 'artikelen/*.html',
 		})
 
 		.use(addCollectionPages())
 
 		.use('@metalsmith/layouts')
 		.use('metalsmith-native-lazy-loading', { selector: 'carousel' })
+
+		// do assets as last to avoid manipulation
+		.use('metalsmith-assets-improved', {
+			dest: 'assets',
+		})
+		.use('metalsmith-assets-improved', {
+			src: path.join(__dirname, 'icons'),
+			dest: 'icons',
+		})
+
+		.use('metalsmith-link-checker', {
+			ignore: ['assets', 'icons'],
+		})
 
 		.use('metalsmith-debug')
 		.use('debug') // metalsmith-native-lazy-loading uses debug instead of metalsmith-debug
