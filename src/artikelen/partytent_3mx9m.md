@@ -1,11 +1,6 @@
 ---
 collection:
   - Tenten
-images:
-  - "images/partytent_3mx9m/1200x785.jpg"
-  - "images/partytent_3mx9m/1200x1200.jpg"
-  - "images/partytent_3mx9m/IMG_20150829_160741.jpg"
-
 title: "Party tent 3m x 9m"
 price: 90
 ---

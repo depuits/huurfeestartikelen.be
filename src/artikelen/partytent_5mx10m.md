@@ -1,15 +1,6 @@
 ---
 collection:
   - Tenten
-images:
-  - "images/partytent_5mx10m/UPSHOT-HuwelijkElienJoeri-Receptie-27.jpg"
-  - "images/partytent_5mx10m/IMG_20220709_090037.jpg"
-  - "images/partytent_5mx10m/UPSHOT-HuwelijkElienJoeri-Receptie-30.jpg"
-  - "images/partytent_5mx10m/IMG_20220709_090047.jpg"
-  - "images/partytent_5mx10m/UPSHOT-HuwelijkElienJoeri-Receptie-31.jpg"
-  - "images/partytent_5mx10m/UPSHOT-HuwelijkElienJoeri-Receptie-33.jpg"
-  - "images/partytent_5mx10m/dak.jpg"
-
 title: "Party tent 5m x 10m"
 price: 150
 ---

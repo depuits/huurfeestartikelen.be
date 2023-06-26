@@ -1,9 +1,6 @@
 ---
 collection:
   - Decoratie
-images:
-  - "images/schalen/UPSHOT-HuwelijkElienJoeri-Receptie-35.jpg"
-  - "images/schalen/UPSHOT-HuwelijkElienJoeri-Receptie-36.jpg"
 title: "Gouden schaal"
 price: 0.5
 ---

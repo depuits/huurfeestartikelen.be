@@ -42,7 +42,9 @@
     "metalsmith-assets-improved": "^1.0.1",
     "metalsmith-debug": "^1.2.0",
     "metalsmith-handlebars-x": "^0.3.0",
+    "metalsmith-link-checker": "^0.5.2",
     "metalsmith-native-lazy-loading": "github:depuits/metalsmith-native-lazy-loading",
+    "metalsmith-project-images": "github:depuits/metalsmith-project-images",
     "metalsmith-rootpath": "^1.0.4",
     "metalsmith-sharp": "github:depuits/metalsmith-sharp",
     "metalsmith-sugar": "^1.1.0",
@@ -53,7 +55,6 @@
     "stylelint-config-prettier-scss": "0.0.1",
     "stylelint-config-standard-scss": "^6.1.0",
     "stylelint-no-unsupported-browser-features": "^6.0.1",
-    "stylelint-selector-bem-pattern": "^2.1.1",
-    "metalsmith-link-checker": "^0.5.2"
+    "stylelint-selector-bem-pattern": "^2.1.1"
   }
 }

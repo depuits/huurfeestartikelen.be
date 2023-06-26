@@ -1,13 +1,6 @@
 ---
 collection:
   - Meubels
-images:
-  - "images/tafels/IMG_20230624_103851.jpg"
-  - "images/tafels/IMG_20230624_104103.jpg"
-  - "images/tafels/IMG_20230624_103904.jpg"
-  - "images/tafels/IMG_20230624_103913.jpg"
-  - "images/tafels/IMG_20230624_103926.jpg"
-
 title: "Tafel 4 personen"
 price: 5
 ---

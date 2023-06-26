@@ -1,12 +1,6 @@
 ---
 collection:
   - Decoratie
-images:
-  - "images/deco_flessen/UPSHOT-HuwelijkElienJoeri-Receptie-39.jpg"
-  - "images/deco_flessen/DSC00227.jpg"
-  - "images/deco_flessen/DSC00324.jpg"
-  - "images/deco_flessen/IMG_20230624_102822.jpg"
-  - "images/deco_flessen/IMG_20230624_102809.jpg"
 title: "Decoratieve flessen (55)"
 price: 5
 ---

@@ -1,14 +1,6 @@
 ---
 collection:
   - Glazen
-images:
-  - "images/cava_glazen/UPSHOT-HuwelijkElienJoeri-Receptie-9.jpg"
-  - "images/cava_glazen/901x1200.jpg"
-  - "images/cava_glazen/421x1200.jpg"
-  - "images/cava_glazen/420x1200.jpg"
-  - "images/cava_glazen/820x1200.jpg"
-  - "images/cava_glazen/IMG_20230624_102252.jpg"
-  - "images/cava_glazen/IMG_20230624_102302.jpg"
 title: "Cava glazen (40)"
 price: 10
 ---

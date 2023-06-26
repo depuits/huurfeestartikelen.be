@@ -1,11 +1,6 @@
 ---
 collection:
   - Meubels
-images:
-  - "images/stoelen/IMG_20230624_104225.jpg"
-  - "images/stoelen/IMG_20230624_104245.jpg"
-  - "images/stoelen/IMG_20230624_104057.jpg"
-  - "images/stoelen/IMG_20230624_104253.jpg"
 title: "Stoel"
 price: 2
 ---

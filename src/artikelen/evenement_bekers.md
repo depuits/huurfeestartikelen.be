@@ -1,9 +1,6 @@
 ---
 collection:
   - Glazen
-images:
-  - "images/evenement_bekers/IMG_20230619_185452.jpg"
-  - "images/evenement_bekers/IMG_20230619_185324.jpg"
 title: "Evenement bekers (84)"
 price: 20
 ---

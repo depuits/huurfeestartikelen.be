@@ -54,6 +54,18 @@ function build() {
 			],
 		})
 
+		.use('metalsmith-project-images', {
+			pattern: 'artikelen/*.md',
+			imagesDirectory: f =>
+				f
+					.split('.')
+					.slice(0, -1)
+					.join('.') // remove file extension
+					.split('/')
+					.slice(1)
+					.join('/'), // remove first directory (artikelen)
+		})
+
 		.use('@metalsmith/drafts')
 		.use('@metalsmith/markdown')
 		.use(
