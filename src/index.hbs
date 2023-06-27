@@ -1,9 +1,71 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="nl">
 	<head>
-		<meta http-equiv="refresh" content="7; url='{{rootPath}}artikelen.html'" />
+		<!-- Basic Page Needs
+		================================================== -->
+		<meta charset="utf-8">
+		<title>{{#if title}}Verhuur van {{title}} | {{site.title}}{{else}}{{site.title}}{{/if}}</title>
+		<meta name="description" content="{{ site.description }}" />
+		<meta name="author" content="Colman Joeri">
+
+		<!-- Mobile Specific Metas
+		================================================== -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Favicons
+		================================================== -->
+		<link rel="icon" href="{{rootPath}}icons/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="{{rootPath}}icons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="{{rootPath}}icons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="{{rootPath}}icons/favicon-16x16.png">
+		<link rel="manifest" href="{{rootPath}}icons/site.webmanifest">
+		<link rel="mask-icon" href="{{rootPath}}icons/safari-pinned-tab.svg" color="#9e2914">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+
+		<!-- Stylesheet
+		================================================== -->
+		<link rel="stylesheet" href="{{rootPath}}assets/css/bootstrap.min.css">
+		<link rel="stylesheet" href="{{rootPath}}assets/css/templatemo.css">
+		<link rel="stylesheet" href="{{rootPath}}assets/css/custom.css">
+
+		<!-- Load fonts style after rendering the layout styles -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+		<link rel="stylesheet" href="{{rootPath}}assets/css/fontawesome.min.css">
+
+		{{!--<link rel="stylesheet" type="text/css" href="{{rootPath}}style/base.css" />--}}
+
+		<meta http-equiv="refresh" content="1; url='{{rootPath}}artikelen.html'" />
+		<style>
+			html, body {
+				text-align: center;
+				height: 100%;
+			}
+			body {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				position: relative;
+			}
+			div {
+				margin: 32px;
+			}
+			img {
+				width: 25%;
+			}
+	@media screen and (max-width: 800px) {
+			img {
+				width: 50%;
+			}
+	}
+		</style>
 	</head>
+
 	<body>
-		<p>Je wordt binnenkort doorgestuurd naar {{site.title}}!</p>
+		<div>
+			<img src="{{rootPath}}icons/favicon.svg" />
+			<p>U word binnen enkele seconde doorgestuurd naar {{site.title}}!</p>
+			<p><a href="{{rootPath}}artikelen.html">Klik hier</a> als u niet automatisch wordt doorgestuurd.</p>
+		</div>
 	</body>
 </html>
