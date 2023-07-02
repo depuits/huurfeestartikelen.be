@@ -9,6 +9,7 @@ const handlebarsHelpers = require('./helpers/handlebarsBasics');
 const addCollectionPages = require('./addCollectionPages');
 
 const isProduction = process.env.NODE_ENV === 'production';
+const siteUrl = isProduction ? 'https://huurfeestartikelen.be' : 'https://localhost:3000';
 
 function build() {
 	const t1 = performance.now();
@@ -21,7 +22,7 @@ function build() {
 				title: 'Huur feestartikelen',
 				description:
 					'Verhuur van feestartikelen zoals tenten, stoelen en glazen voor een geslaagd feest of evenement.',
-				url: isProduction ? 'https://huurfeestartikelen.be' : 'https://localhost:3000',
+				url: siteUrl,
 			},
 			contact: {
 				mail: 'info@huurfeestartikelen.be',
@@ -106,7 +107,7 @@ function build() {
 		})
 
 		.use('metalsmith-link-checker', {
-			ignore: ['assets', 'icons'],
+			ignore: ['assets', 'icons', siteUrl],
 		})
 
 		.use('metalsmith-debug')
