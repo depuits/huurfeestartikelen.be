@@ -106,6 +106,10 @@ function build() {
 			dest: 'icons',
 		})
 
+		.use('metalsmith-sitemap', {
+			hostname: siteUrl,
+		})
+
 		.use('metalsmith-link-checker', {
 			ignore: ['assets', 'icons', siteUrl],
 		})

@@ -47,6 +47,7 @@
     "metalsmith-project-images": "github:depuits/metalsmith-project-images",
     "metalsmith-rootpath": "^1.0.4",
     "metalsmith-sharp": "github:depuits/metalsmith-sharp",
+    "metalsmith-sitemap": "^1.2.2",
     "metalsmith-sugar": "^1.1.0",
     "mocha": "^10.0.0",
     "path-value": "^0.9.4",
