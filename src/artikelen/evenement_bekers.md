@@ -1,7 +1,7 @@
 ---
 collection:
   - Glazen
-title: "Evenement bekers (84)"
+title: "Evenement bekers (80)"
 price: 20
 ---
 
@@ -13,4 +13,4 @@ Huur onze transparante evenement bekers voor jouw volgende feest of evenement! D
 - Diameter: 7.6 cm
 - Inhoud: 33 cl
 
-We hebben maximaal 84 evenement bekers beschikbaar voor verhuur.
+We hebben maximaal 80 evenement bekers beschikbaar voor verhuur.

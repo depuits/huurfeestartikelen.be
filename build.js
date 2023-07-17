@@ -21,7 +21,7 @@ function build() {
 			site: {
 				title: 'Huur feestartikelen',
 				description:
-					'Verhuur van feestartikelen zoals tenten, stoelen en glazen voor een geslaagd feest of evenement.',
+					'Verhuur van partytenten, stoelen, tafels, glazen, decoratie en meer. Maak jouw feest of evenement onvergetelijk met onze feestartikelen. Reserveer nu!',
 				url: siteUrl,
 			},
 			contact: {

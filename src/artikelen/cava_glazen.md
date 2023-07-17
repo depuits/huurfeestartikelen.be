@@ -2,6 +2,7 @@
 collection:
   - Glazen
 title: "Cava glazen (40)"
+description: "Huur hoogwaardige cava glazen voor een stijlvol feest. Voeg glamour toe aan jouw bruiloft, jubileum of evenement. Reserveer nu!"
 price: 10
 ---
 
