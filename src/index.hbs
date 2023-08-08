@@ -1,72 +1,71 @@
-<!doctype html>
-<html lang="nl">
-	<head>
-		<!-- Basic Page Needs
-		================================================== -->
-		<meta charset="utf-8">
-		<title>{{#if title}}Verhuur van {{title}} | {{site.title}}{{else}}{{site.title}}{{/if}}</title>
-		<meta name="description" content="{{ site.description }}" />
-		<meta name="author" content="Colman Joeri">
+---
+layout: default.hbs
+---
 
-		<!-- Mobile Specific Metas
-		================================================== -->
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<section class="bg-success py-5">
+	<div class="container">
+		<div class="row align-items-center py-5">
+			<div class="col-md-8 text-white">
+				<h1>Over ons</h1>
+				<p>
+					Welkom bij {{site.title}}! Wij zijn een kleine zelfstandige onderneming die gespecialiseerd is in het verhuren van feestmateriaal in de regio Deinze, Zulte en Waregem. Wat ons uniek maakt, is dat we ons materiaal hebben opgebouwd vanuit onze eigen ervaring in het organiseren van feesten.
+				</p>
+				<p>
+					Of je nu een intieme bijeenkomst in de tuin organiseert of een groter feest op een speciale locatie, we helpen u graag met het benodigde feestmateriaal. We werken met flexibele huurperiodes en hanteren redelijke tarieven, zodat ook kleinere evenementen kunnen genieten van kwalitatief hoogwaardig materiaal.
+				</p>
 
-		<!-- Favicons
-		================================================== -->
-		<link rel="icon" href="{{rootPath}}icons/favicon.ico">
-		<link rel="apple-touch-icon" sizes="180x180" href="{{rootPath}}icons/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="{{rootPath}}icons/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="{{rootPath}}icons/favicon-16x16.png">
-		<link rel="manifest" href="{{rootPath}}icons/site.webmanifest">
-		<link rel="mask-icon" href="{{rootPath}}icons/safari-pinned-tab.svg" color="#9e2914">
-		<meta name="msapplication-TileColor" content="#da532c">
-		<meta name="theme-color" content="#ffffff">
-
-		<!-- Stylesheet
-		================================================== -->
-		<link rel="stylesheet" href="{{rootPath}}assets/css/bootstrap.min.css">
-		<link rel="stylesheet" href="{{rootPath}}assets/css/templatemo.css">
-		<link rel="stylesheet" href="{{rootPath}}assets/css/custom.css">
-
-		<!-- Load fonts style after rendering the layout styles -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
-		<link rel="stylesheet" href="{{rootPath}}assets/css/fontawesome.min.css">
-
-		{{!--<link rel="stylesheet" type="text/css" href="{{rootPath}}style/base.css" />--}}
-
-		<link rel="canonical" href="{{site.url}}/{{rootPath}}artikelen.html" />
-		<meta http-equiv="refresh" content="1; url='{{rootPath}}artikelen.html'" />
-		<style>
-			html, body {
-				text-align: center;
-				height: 100%;
-			}
-			body {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				position: relative;
-			}
-			div {
-				margin: 32px;
-			}
-			img {
-				width: 25%;
-			}
-	@media screen and (max-width: 800px) {
-			img {
-				width: 50%;
-			}
-	}
-		</style>
-	</head>
-
-	<body>
-		<div>
-			<img src="{{rootPath}}icons/favicon.svg" />
-			<p>U word binnen enkele seconde doorgestuurd naar {{site.title}}!</p>
-			<p><a href="{{rootPath}}artikelen.html">Klik hier</a> als u niet automatisch wordt doorgestuurd.</p>
+				<a class="btn btn-success shadow" href="{{rootPath}}artikelen.html">Onze artikelen</a>
+			</div>
+			<div class="col-md-4">
+				<img src="assets/img/00d78156-b25e-4f6b-ad31-972cace21205.png" alt="About Hero" style="width: 100%;">
+			</div>
 		</div>
-	</body>
-</html>
+	</div>
+</section>
+<!-- Close Banner -->
+
+<!-- Start Section -->
+<section class="container py-5">
+	<div class="row text-center pt-5 pb-3">
+		<div class="col-lg-6 m-auto">
+			<h1 class="h1">Onze diensten</h1>
+			<p>
+				Bij {{site.title}} streven we naar tevreden klanten en een persoonlijke benadering. We zijn trots op ons feestmateriaal en willen jou helpen om van jouw feest een onvergetelijke ervaring te maken. Neem vandaag nog contact met ons op en ontdek hoe we je kunnen ondersteunen bij het realiseren van jouw feestplannen. We kijken ernaar uit om met je samen te werken!
+			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3 col-lg-3"></div>
+
+		<div class="col-md-6 col-lg-2 pb-5">
+			<div class="h-100 py-5 services-icon-wap shadow">
+				<div class="h1 text-success text-center"><i class="fas fa-exchange-alt"></i></div>
+				<h2 class="h5 mt-4 text-center">Flexibiliteit</h2>
+			</div>
+		</div>
+
+		<div class="col-md-6 col-lg-2 pb-5">
+			<div class="h-100 py-5 services-icon-wap shadow">
+				<div class="h1 text-success text-center"><i class="fa fa-truck fa-lg"></i></div>
+				<h2 class="h5 mt-4 text-center">Levering</h2>
+			</div>
+		</div>
+
+		<div class="col-md-6 col-lg-2 pb-5">
+			<div class="h-100 py-5 services-icon-wap shadow">
+				<div class="h1 text-success text-center"><i class="fa fa-user"></i></div>
+				<h2 class="h5 mt-4 text-center">Snelle Service</h2>
+			</div>
+		</div>
+	</div>
+
+	<div class="row text-center pt-5 pb-3">
+		<div class="col-lg-6 m-auto">
+			<h1 class="h1">Levering</h1>
+			<p>
+				We kunnen de levering van al onze artikelen regelen indien gewenst. Houd er rekening mee dat er een leveringskost van €3 per kilometer in rekening wordt gebracht. Laat het ons weten als je gebruik wilt maken van deze service, zodat we de levering nauwkeurig kunnen plannen en je feestlocatie op tijd kunnen voorzien
+			</p>
+		</div>
+	</div>
+</section>
+<!-- End Section -->

@@ -28,6 +28,7 @@ function build() {
 				mail: 'info@huurfeestartikelen.be',
 				phone: '+324 97 16 15 85',
 				address: 'Bokstraat 19, 9870 Zulte-Machelen',
+				btw: 'BE0785782944',
 			},
 		},
 	});
