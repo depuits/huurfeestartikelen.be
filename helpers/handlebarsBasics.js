@@ -9,7 +9,7 @@ module.exports = {
 	get_current_year: () => new Date().getFullYear(),
 
 	format_price: num => {
-		if (Number.isNaN(num)) {
+		if (Number.isNaN(+num)) {
 			return num;
 		}
 
