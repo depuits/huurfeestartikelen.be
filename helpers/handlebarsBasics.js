@@ -8,7 +8,13 @@ module.exports = {
 
 	get_current_year: () => new Date().getFullYear(),
 
-	format_price: num => myformat.format(num),
+	format_price: num => {
+		if (Number.isNaN(num)) {
+			return num;
+		}
+
+		return `€${myformat.format(num)}`;
+	},
 	first: arr => (arr || [])[0],
 
 	remove_whitespace: str => (str || '').replace(/\s+/g, ''),
