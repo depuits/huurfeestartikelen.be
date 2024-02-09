@@ -1,0 +1,58 @@
+/*
+Custom Css
+*/
+
+/* Style for the fullscreen element */
+#fullscreen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background-color: rgba(0, 0, 0, 0.9);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	opacity: 0;
+	transition: opacity 0.2s ease-in-out;
+	cursor: zoom-out;
+}
+
+/* Style for the image */
+#fullscreen img {
+	max-width: 100%;
+	max-height: 100%;
+
+	transition: transform 0.5s ease-in-out;
+	transform: scale(0.7);
+	filter: blur(5px);
+}
+
+#fullscreen.active img {
+	transform: scale(1);
+	filter: blur(0px);
+}
+
+/* div link
+  https://stackoverflow.com/a/3494108
+*/
+.card a span {
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+
+  z-index: 1;
+
+  /* fixes overlap error in IE7/8,
+     make sure you have an empty gif */
+  /*background-image: url('empty.gif');*/
+}
+
+.card a.top {
+	position: relative;
+	z-index: 2;
+}
